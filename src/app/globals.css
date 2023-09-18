@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: Jost;
+  src: url("/fonts/Jost/Jost-VariableFont_wght.ttf") format("opentype");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@font-face {
+  font-family: Inter;
+  src: url("/fonts/Inter/Inter-VariableFont_slnt,wght.ttf") format("opentype");
+}
+
+@layer components {
+  .primaryHeader {
+    @apply font-jost text-white text-[31px] leading-[35px];
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .heroHeader {
+    @apply font-inter text-white text-[105px] leading-[108.8px];
+  }
+}
+
+@layer components {
+  .bannerLogo {
+    @apply font-inter text-white text-[36px] leading-[38px] font-medium;
+  }
+}
+
+@layer components {
+  .secondaryHeader {
+    @apply font-inter text-white text-[42px] leading-[48.8];
+  }
+}
+
+@layer components {
+  .quoteHeader {
+    @apply font-inter text-white text-[75px] leading-[82.5px];
+  }
+}
+
+@layer components {
+  .quotetext {
+    @apply font-inter text-white text-[19px] leading-[25px];
+  }
+}
+
+@layer components {
+  .numberHeader {
+    @apply font-inter text-white text-[106px] leading-[110px];
+  }
+}
+
+@layer components {
+  .text {
+    @apply font-jost text-white text-[24px] leading-[28px];
+  }
+}
+
+@layer components {
+  .blogTitle {
+    @apply font-jost text-white text-[21.5px] leading-[28px];
+  }
+}
+
+@layer components {
+  .blogText {
+    @apply font-jost text-white text-[19px] leading-[28px];
+  }
 }
