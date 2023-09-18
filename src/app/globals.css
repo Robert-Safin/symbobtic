@@ -13,61 +13,99 @@
 }
 
 @layer components {
-  .primaryHeader {
-    @apply font-jost text-white text-[31px] leading-[35px];
+  .bannerLogo {
+    @apply font-inter text-white text-[21.8px] leading-[22.8px] font-medium
+    md:text-[36px] md:leading-[38px];
+  }
+}
+
+@layer components {
+  .serviceHeader {
+    @apply font-jost text-white     text-[18.6px] leading-[21px]
+    md:text-[31px] md:leading-[35px];
   }
 }
 
 @layer components {
   .heroHeader {
-    @apply font-inter text-white text-[105px] leading-[108.8px];
-  }
-}
-
-@layer components {
-  .bannerLogo {
-    @apply font-inter text-white text-[36px] leading-[38px] font-medium;
+    @apply font-inter text-white text-[63px] leading-[65px]
+    md:text-[105px] md:leading-[108.8px];
   }
 }
 
 @layer components {
   .secondaryHeader {
-    @apply font-inter text-white text-[42px] leading-[48.8];
+    @apply font-inter text-white text-[25.2px] leading-[29.5px]
+    md:text-[42px] md:leading-[48.8px];
   }
 }
 
 @layer components {
   .quoteHeader {
-    @apply font-inter text-white text-[75px] leading-[82.5px];
+    @apply font-inter text-white text-[30px] leading-[35px]
+    md:text-[75px] md:leading-[82.5px];
   }
 }
 
 @layer components {
-  .quotetext {
-    @apply font-inter text-white text-[19px] leading-[25px];
+  .quoteText {
+    @apply font-inter text-white text-[11.5px] leading-[15px]
+      md:text-[19px] md:leading-[25px];
   }
 }
 
 @layer components {
   .numberHeader {
-    @apply font-inter text-white text-[106px] leading-[110px];
+    @apply font-inter text-white text-[63.5px] leading-[66px]
+    md:text-[106px] md:leading-[110px];
   }
 }
 
 @layer components {
   .text {
-    @apply font-jost text-white text-[24px] leading-[28px];
+    @apply font-jost text-white text-[14.4px] leading-[16.8px]
+    md:text-[24px] md:leading-[28px];
   }
 }
 
 @layer components {
   .blogTitle {
-    @apply font-jost text-white text-[21.5px] leading-[28px];
+    @apply font-jost text-white text-[10.3px] leading-[13.4px]
+    md:text-[21.5px] md:leading-[28px];
   }
 }
 
 @layer components {
   .blogText {
-    @apply font-jost text-white text-[19px] leading-[28px];
+    @apply font-jost text-white text-[9.12px] leading-[13.4px]
+    md:text-[19px] md:leading-[28px];
+  }
+}
+
+@layer components {
+  .menuBurger {
+    @apply font-jost text-white text-[15px] leading-[15px] border-b border-white pb-1
+    md:text-[21px] md:leading-[22px]
+    hover:text-highlight hover:border-highlight;
+
+  }
+}
+
+@layer components {
+  .menuLinks {
+    @apply font-jost text-white text-[37.2px] leading-[30px] tracking-[1px]
+    lg:text-[62px] lg:leading-[80px]
+    w-fit border-b-2
+  hover:text-highlight hover:border-highlight;
+  }
+}
+
+
+
+@layer components {
+  .navLinks {
+    @apply font-jost text-white text-[18px] leading-[18px] border-b border-white pb-1
+    hover:text-highlight hover:border-highlight;
+
   }
 }
