@@ -109,7 +109,7 @@ const Hero = () => {
       </div>
 
       <p
-        className="hidden lg:block right-10 absolute bottom-40 text max-w-[250px] animate-pulse animate-duration-[2500ms]
+        className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] animate-pulse animate-duration-[2500ms]
 
         "
         style={{
@@ -125,7 +125,7 @@ const Hero = () => {
       </p>
 
       <p
-        className="hidden lg:block right-10 absolute -bottom-20 text max-w-[250px]"
+        className="hidden lg:block right-40 absolute -bottom-20 text max-w-[250px]"
         style={{
           transform: `translateY(${offsetY * -2.1}px)`,
           opacity: `${offsetY / 200}`,
@@ -138,7 +138,7 @@ const Hero = () => {
         We use design to put people and their choices at the center.
       </p>
       <p
-        className="hidden lg:block right-10 -bottom-[800px] absolute text max-w-[250px]"
+        className="hidden lg:block right-40 -bottom-[800px] absolute text max-w-[250px]"
         style={{
           transform: `translateY(${offsetY * -2.1}px)`,
           opacity: `${offsetY / 200}`,
