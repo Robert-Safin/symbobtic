@@ -50,14 +50,14 @@ const Nav = () => {
             <BsSearch className="text-white" />
           </div>
           <div className="flex flex-col lg:flex-row lg:space-x-40 lg:px-10">
-            <div className="flex flex-col space-y-4 my-20">
+            <div className="flex flex-col space-y-4 my-10">
               <p className="text-ghostGray">navigate</p>
               <h2 className="menuLinks">home</h2>
               <h2 className="menuLinks">blog</h2>
               <h2 className="menuLinks">contact us</h2>
               <h2 className="menuLinks">newsletter</h2>
             </div>
-            <div className="flex flex-col space-y-4 my-20">
+            <div className="flex flex-col space-y-4 my-10">
               <p className="text-ghostGray">our services</p>
               <h2 className="menuLinks">brand design</h2>
               <h2 className="menuLinks">web services</h2>
