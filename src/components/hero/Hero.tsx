@@ -16,8 +16,6 @@ const Hero = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
-
   return (
     <>
       <div
@@ -100,9 +98,10 @@ const Hero = () => {
         <video
           className="absolute -z-20 top-0 object-fill w-full
         "
+          playsInline
+          muted
           autoPlay
           loop
-          muted
           src="/video/symbobtic.mp4"
           onLoadedData={() => setIsLoaded(true)}
         />
@@ -118,7 +117,6 @@ const Hero = () => {
             offsetY > 1
               ? `blur(${Math.min(Math.max((offsetY - 1) / 20, 0), 50)}px)`
               : "blur(0px)",
-
         }}
       >
         scroll and find out more
