@@ -10,7 +10,7 @@ import Blog from "@/components/blog/Blog";
 import Contact from "@/components/contact/Contact";
 import Footer from "@/components/footer/Footer";
 
-export default function Home() {
+const Home = async () => {
   return (
     <div>
       <Nav />
@@ -25,4 +25,6 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
+};
+
+export default Home;

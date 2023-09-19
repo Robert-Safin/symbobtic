@@ -1,6 +1,5 @@
 "use client";
 
-import { off } from "process";
 import { useEffect, useRef, useState } from "react";
 
 const Hero = () => {
@@ -108,7 +107,7 @@ const Hero = () => {
       </div>
 
       <p
-        className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] animate-pulse animate-duration-[2500ms]
+        className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all delay-0 duration-0 animate-fade-in-fourth
 
         "
         style={{
@@ -136,13 +135,13 @@ const Hero = () => {
         We use design to put people and their choices at the center.
       </p>
       <p
-        className="hidden lg:block right-40 -bottom-[800px] absolute text max-w-[250px]"
+        className="hidden lg:block right-40  -bottom-[800px] absolute text max-w-[250px]"
         style={{
           transform: `translateY(${offsetY * -2.1}px)`,
-          opacity: `${offsetY / 200}`,
+          opacity: `${Math.min(Math.max((offsetY - 208) / 200, 0), 1)}`,
           filter:
-            offsetY > 420
-              ? `blur(${Math.min(Math.max((offsetY - 420) / 20, 0), 50)}px)`
+            offsetY > 400
+              ? `blur(${Math.min(Math.max((offsetY - 400) / 20, 0), 50)}px)`
               : "blur(0px)",
         }}
       >
