@@ -106,7 +106,7 @@ const Hero = () => {
         />
       </div>
 
-      <p
+      {isLoaded && <p
         className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all delay-0 duration-0 animate-fade-in-fourth
 
         "
@@ -119,7 +119,7 @@ const Hero = () => {
         }}
       >
         scroll and find out more
-      </p>
+      </p>}
 
       <p
         className="hidden lg:block right-40 absolute -bottom-20 text max-w-[250px]"
