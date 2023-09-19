@@ -6,6 +6,9 @@ import Services from "@/components/services/Services";
 import Plan from "@/components/plan/Plan";
 import Clients from "@/components/clients/Clients";
 import Quote from "@/components/quote/Quote";
+import Blog from "@/components/blog/Blog";
+import Contact from "@/components/contact/Contact";
+import Footer from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
       <Plan />
       <Clients />
       <Quote />
+      <Blog />
+      <Contact />
+      <Footer />
     </div>
   );
 }
