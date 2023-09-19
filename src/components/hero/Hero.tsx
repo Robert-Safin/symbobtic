@@ -19,7 +19,7 @@ const Hero = () => {
     <>
       <div
         className="relative max-w-[1480px] h-[680px] md:h-[1300px] mx-auto
-    overflow-hidden
+    overflow-hidden border-b-2 border-highlight
     "
       >
         {isLoaded && (
