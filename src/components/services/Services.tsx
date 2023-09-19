@@ -94,7 +94,7 @@ const Services = () => {
         >
           <div className="relative h-[420px] w-full  md:h-[700px] md:mr-0 lg:w-[790px]  overflow-hidden">
             <Image
-              src="/img/satalite.png"
+              src="/img/satellite.png"
               width={1000}
               height={1000}
               alt=""
