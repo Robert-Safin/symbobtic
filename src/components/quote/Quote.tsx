@@ -32,10 +32,10 @@ const Quote = () => {
             width={1000}
             height={1000}
             alt=""
-            className="object-cover -top-40 md:-top-80 absolute transition-all delay-0 duration-0"
+            className="object-cover -top-36 md:-top-48 absolute transition-all delay-0 duration-0"
             style={{
               transform: isVisible
-                ? `translateY(${((offsetY - enteredY) / 100) * 9}px)`
+                ? `translateY(${((offsetY - enteredY) / 100) * 10}px)`
                 : `translateY(0)`,
             }}
           />
