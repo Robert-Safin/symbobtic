@@ -6,6 +6,7 @@ import { Waypoint } from "react-waypoint";
 const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [enteredY, setEnteredY] = useState(0);
+  const [headerVisible, setHeaderVisible] = useState(false);
 
   const [offsetY, setOffsetY] = useState(0);
 
@@ -20,65 +21,85 @@ const Services = () => {
   return (
     <>
       <div className="flex flex-row px-6 space-x-10 md:space-x-40 mb-20">
-        <h1 className="serviceHeader font-inter">services</h1>
+        <Waypoint onEnter={()=>setHeaderVisible(true)}>
+          <h1
+            className={`serviceHeader font-inter  transition-all ${
+              headerVisible ? "animate-fade-up animate-duration-1000 animate-delay-100" : ""
+            }`}
+          >
+            services
+          </h1>
+        </Waypoint>
         <div className="flex flex-col lg:flex-row justify-between w-full pr-6">
           <div>
-            <h1 className="serviceHeader mb-3 underline hover:text-highlight hover:decoration-highlight decoration-4">
+            <h1 className="serviceHeader mb-3 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
               brand design
             </h1>
-            <p className="text mb-[6px] hover:text-highlight">brand strategy</p>
-            <p className="text mb-[6px] hover:text-highlight">
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              brand strategy
+            </p>
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
               brand & rebranding
             </p>
-            <p className="text mb-[6px] hover:text-highlight">logo design</p>
-            <p className="text mb-[6px] hover:text-highlight">
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              logo design
+            </p>
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
               visual identity
             </p>
-            <p className="text mb-[6px] hover:text-highlight">
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
               packaging design
             </p>
-            <p className="text mb-[6px] hover:text-highlight">
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
               corporate identity
             </p>
           </div>
 
           <div>
-            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight hover:decoration-highlight decoration-4">
-              brand design
+            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
+              web design
             </h1>
-            <p className="text mb-[6px] hover:text-highlight">brand strategy</p>
-            <p className="text mb-[6px] hover:text-highlight">
-              brand & rebranding
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              UX/UI design
             </p>
-            <p className="text mb-[6px] hover:text-highlight">logo design</p>
-            <p className="text mb-[6px] hover:text-highlight">
-              visual identity
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              art direction
             </p>
-            <p className="text mb-[6px] hover:text-highlight">
-              packaging design
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              development
             </p>
-            <p className="text mb-[6px] hover:text-highlight">
-              corporate identity
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              microinteractions
+            </p>
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              content design
+            </p>
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              audit SEO
             </p>
           </div>
 
           <div>
-            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight hover:decoration-highlight decoration-4">
-              brand design
+            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
+              Copywriting
             </h1>
-            <p className="text mb-[6px] hover:text-highlight">brand strategy</p>
-            <p className="text mb-[6px] hover:text-highlight">
-              brand & rebranding
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              SEO optimization
             </p>
-            <p className="text mb-[6px] hover:text-highlight">logo design</p>
-            <p className="text mb-[6px] hover:text-highlight">
-              visual identity
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              revisioning
             </p>
-            <p className="text mb-[6px] hover:text-highlight">
-              packaging design
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              landing pages
             </p>
-            <p className="text mb-[6px] hover:text-highlight">
-              corporate identity
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              company profile
+            </p>
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              creative slogans
+            </p>
+            <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
+              ecommerce
             </p>
           </div>
         </div>
@@ -111,9 +132,11 @@ const Services = () => {
             />
           </div>
         </Waypoint>
-        <h1 className="quoteHeader px-4 absolute top-14 left-6 md:top-20
+        <h1
+          className="quoteHeader px-4 absolute top-14 left-6 md:top-20
         lg:max-w-[800px]
-        ">
+        "
+        >
           Technology is the wizard`s wand that turns today`s dreams into {""}
           <span className="relative">
             <span>tomorrow`s {""}</span>

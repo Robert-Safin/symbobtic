@@ -1,10 +1,11 @@
 "use client";
-
+import { Waypoint } from "react-waypoint";
 import { useEffect, useState } from "react";
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const [offsetY, setOffsetY] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
@@ -65,10 +66,13 @@ const Hero = () => {
                     : {}
                 }
               >
+                <Waypoint onEnter={()=>setIsVisible(true)}>
+
                 <h2 className="relative heroHeader">
                   human
-                  <div className="absolute w-full h-6 bg-highlight bottom-1 md:bottom-2 md:h-10 -z-10" />
+                  <div className={`absolute w-1 h-6 bg-highlight bottom-1 md:bottom-2 md:h-10 -z-10  translate-all duration-700 delay-[2000ms]  ${isVisible? "w-[100%]" : ""}`} />
                 </h2>
+                </Waypoint>
               </div>
               <h2
                 className="heroHeader animate-fade-in-second lg:fixed lg:top-[700px]"

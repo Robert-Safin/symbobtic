@@ -1,11 +1,19 @@
+'use client'
 import Image from "next/image";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
+
 
 const Blog = () => {
+
+  const [isVisible, setIsVisible] = useState(false);
   return (
     <div className="relative mt-40 px-6">
       <div className="h-[1px] w-full bg-white" />
+    <Waypoint onEnter={()=>setIsVisible(true)}>
 
-      <h1 className="secondaryHeader py-20">blog</h1>
+      <h1 className={`serviceHeader font-inter py-20 transition-all duration-1000 ${isVisible? "animate-fade-up animate-duration-1000 animate-delay-100":''}`}>blog</h1>
+    </Waypoint>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col group px-12 md:px-0 group">
           <div className="relative">

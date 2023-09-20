@@ -1,9 +1,22 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
 
 const Clients = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <div className="px-6 mb-32">
-      <h1 className="serviceHeader mb-20">clients</h1>
+      <Waypoint onEnter={() => setIsVisible(true)}>
+        <h1
+          className={`serviceHeader font-inter mb-20  transition-all duration-1000 ${
+            isVisible ? "animate-fade-up animate-duration-1000 animate-delay-100" : ""
+          }`}
+        >
+          clients
+        </h1>
+      </Waypoint>
 
       <div className="flex flex-col py-4 group h-[100px] hover:h-[210px] md:hover:h-[550px] translate-all ease-out duration-1000 border-b overflow-hidden">
         <div className="flex flex-row justify-between items-center">

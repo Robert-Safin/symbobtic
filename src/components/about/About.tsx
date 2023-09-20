@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="relative">
+    <div className="relative mb-48">
       <div className="absolute h-[1px] w-[calc(70px)] bg-white left-6 top-4 md:top-6" />
       <div className="hidden md:block absolute h-[1px] w-[calc(100%-620px-110px)] bg-white right-6 top-4 md:top-6" />
 
@@ -38,7 +38,7 @@ const About = () => {
           we pledge our actions and execute with unwavering follow-through.
         </p>
       </div>
-      <div className="absolute h-[1px] w-[calc(100%-48px)] right-6 bg-white -bottom-10" />
+      <div className="absolute h-[1px] w-[calc(100%-48px)] right-6 bg-white -bottom-28" />
     </div>
   );
 };
