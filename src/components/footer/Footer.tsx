@@ -10,7 +10,6 @@ const Footer = () => {
         <div className="flex space-x-1 md:space-x-6">
           <p className="blogText underline hover:text-highlight hover:decoration-highlight">Privacy Policy</p>
           <p className="blogText underline hover:text-highlight hover:decoration-highlight">Cookie Policy</p>
-          <p className="blogText underline hover:text-highlight hover:decoration-highlight">Aggiorna preferenze cookie</p>
         </div>
       </div>
 

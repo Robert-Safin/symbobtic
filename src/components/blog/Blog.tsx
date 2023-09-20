@@ -1,19 +1,24 @@
-'use client'
+"use client";
 import Image from "next/image";
 import { useState } from "react";
 import { Waypoint } from "react-waypoint";
 
-
 const Blog = () => {
-
   const [isVisible, setIsVisible] = useState(false);
   return (
     <div className="relative mt-40 px-6">
       <div className="h-[1px] w-full bg-white" />
-    <Waypoint onEnter={()=>setIsVisible(true)}>
-
-      <h1 className={`serviceHeader font-inter py-20 transition-all duration-1000 ${isVisible? "animate-fade-up animate-duration-1000 animate-delay-100":''}`}>blog</h1>
-    </Waypoint>
+      <Waypoint onEnter={() => setIsVisible(true)}>
+        <h1
+          className={`serviceHeader font-inter py-20 transition-all duration-1000 ${
+            isVisible
+              ? "animate-fade-up animate-duration-1000 animate-delay-100"
+              : ""
+          }`}
+        >
+          blog
+        </h1>
+      </Waypoint>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col group px-12 md:px-0 group">
           <div className="relative">
@@ -28,12 +33,13 @@ const Blog = () => {
           </div>
           <div className="flex space-x-8 my-8">
             <p className="blogTitle">
-              Siate creativi, siate originali, distinguetevi. Come?
+              Lorem ipsum dolor sit amet consectetur adipisicing.
             </p>
             <p className="quoteText font-jost">
-              Siamo alla ricerca di qualcosa di interessante e le persone
-              originali e creative ci aiutano a trovare queste cose. Come
-              imparare queste preziose qualità
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
+              quos, quod dicta illo ab pariatur soluta doloribus nihil similique
+              maxime a suscipit itaque enim beatae consequuntur perferendis
+              totam non maiores!
             </p>
             <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
@@ -62,12 +68,13 @@ const Blog = () => {
           </div>
           <div className="flex space-x-8 my-8">
             <p className="blogTitle">
-              Siate creativi, siate originali, distinguetevi. Come?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
             <p className="quoteText font-jost">
-              Siamo alla ricerca di qualcosa di interessante e le persone
-              originali e creative ci aiutano a trovare queste cose. Come
-              imparare queste preziose qualità
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Architecto explicabo voluptas sapiente nesciunt. Tempore
+              voluptatum nobis perspiciatis unde odit harum! Illum dolorem
+              itaque architecto corporis.
             </p>
             <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
@@ -96,12 +103,14 @@ const Blog = () => {
           </div>
           <div className="flex space-x-8 my-8">
             <p className="blogTitle">
-              Siate creativi, siate originali, distinguetevi. Come?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque.
             </p>
             <p className="quoteText font-jost">
-              Siamo alla ricerca di qualcosa di interessante e le persone
-              originali e creative ci aiutano a trovare queste cose. Come
-              imparare queste preziose qualità
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
+              voluptate laborum similique quo? Et, amet, est nulla velit,
+              reiciendis qui deserunt numquam error impedit aliquid cupiditate
+              voluptatem aliquam cumque architecto dolorum hic. Ullam,
+              doloremque dignissimos.
             </p>
             <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
@@ -129,13 +138,11 @@ const Blog = () => {
             />
           </div>
           <div className="flex space-x-8 my-8">
-            <p className="blogTitle">
-              Siate creativi, siate originali, distinguetevi. Come?
-            </p>
+            <p className="blogTitle">Lorem ipsum dolor sit amet consectetur.</p>
             <p className="quoteText font-jost">
-              Siamo alla ricerca di qualcosa di interessante e le persone
-              originali e creative ci aiutano a trovare queste cose. Come
-              imparare queste preziose qualità
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia
+              velit ullam laudantium quod est quaerat aliquid accusantium sint
+              amet perspiciatis?
             </p>
             <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div

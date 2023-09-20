@@ -10,6 +10,8 @@ const Services = () => {
 
   const [offsetY, setOffsetY] = useState(0);
 
+  const [quoteVisible, setQuoteVisible] = useState(false);
+
   const handleScroll = () => setOffsetY(window.pageYOffset);
 
   useEffect(() => {
@@ -21,10 +23,12 @@ const Services = () => {
   return (
     <>
       <div className="flex flex-row px-6 space-x-10 md:space-x-40 mb-20">
-        <Waypoint onEnter={()=>setHeaderVisible(true)}>
+        <Waypoint onEnter={() => setHeaderVisible(true)}>
           <h1
             className={`serviceHeader font-inter  transition-all ${
-              headerVisible ? "animate-fade-up animate-duration-1000 animate-delay-100" : ""
+              headerVisible
+                ? "animate-fade-up animate-duration-1000 animate-delay-100"
+                : ""
             }`}
           >
             services
@@ -132,29 +136,38 @@ const Services = () => {
             />
           </div>
         </Waypoint>
-        <h1
-          className="quoteHeader px-4 absolute top-14 left-6 md:top-20
-        lg:max-w-[800px]
-        "
+        <Waypoint
+          onEnter={() => setQuoteVisible(true)}
+          onLeave={() => setQuoteVisible(false)}
         >
-          Technology is the wizard`s wand that turns today`s dreams into {""}
-          <span className="relative">
-            <span>tomorrow`s {""}</span>
-            <div
-              className="absolute w-full h-3 -z-10 bg-highlight bottom-1 right-0
+          <h1
+            className={`quoteHeader px-4 absolute top-14 left-6 md:top-20
+            transition-all duration-[1500ms] delay-300
+        lg:max-w-[800px] ${quoteVisible ? "blur-none" : "blur-lg"}
+        ${quoteVisible? "opacity-100" : "opacity-0"}
+
+        `}
+          >
+            Technology is the wizard&apos;s wand that turns today&apos;s dreams
+            into {""}
+            <span className="relative">
+              <span>tomorrow&apos;s {""}</span>
+              <div
+                className="absolute w-full h-3 -z-10 bg-highlight bottom-1 right-0
             md:h-8 md:bottom-2
             "
-            />
-          </span>
-          <span className="relative">
-            <span>realities.</span>
-            <div
-              className="absolute w-full h-3 -z-10 bg-highlight bottom-1 right-0
+              />
+            </span>
+            <span className="relative">
+              <span>realities.</span>
+              <div
+                className="absolute w-full h-3 -z-10 bg-highlight bottom-1 right-0
             md:h-8 md:bottom-2
             "
-            />
-          </span>
-        </h1>
+              />
+            </span>
+          </h1>
+        </Waypoint>
         <p
           className="quoteText absolute top-[300px] right-10 max-w-[50px]
         md:top-[550px] md:right-24 md:max-w-[100px]

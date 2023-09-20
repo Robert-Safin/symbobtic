@@ -38,7 +38,10 @@ const Plan = () => {
 
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-12">
         <div className="flex items-start">
-          <Waypoint onEnter={() => setIsVisible1(true)}>
+          <Waypoint
+            onEnter={() => setIsVisible1(true)}
+            onLeave={() => setIsVisible1(false)}
+          >
             <h1
               className="numberHeader w-28 md:w-48 transition-all duration-1000 delay-0"
               style={{
@@ -62,7 +65,10 @@ const Plan = () => {
         </div>
 
         <div className="flex items-start">
-          <Waypoint onEnter={() => setIsVisible2(true)}>
+          <Waypoint
+            onEnter={() => setIsVisible2(true)}
+            onLeave={() => setIsVisible2(false)}
+          >
             <h1
               className="numberHeader w-28 md:w-48 transition-all duration-1000 delay-500"
               style={{
@@ -85,7 +91,10 @@ const Plan = () => {
         </div>
 
         <div className="flex items-start">
-          <Waypoint onEnter={() => setIsVisible3(true)}>
+          <Waypoint
+            onEnter={() => setIsVisible3(true)}
+            onLeave={() => setIsVisible3(false)}
+          >
             <h1
               className="numberHeader w-28 md:w-48 transition-all duration-1000 delay-1000"
               style={{
@@ -109,7 +118,10 @@ const Plan = () => {
         </div>
 
         <div className="flex items-start">
-          <Waypoint onEnter={() => setIsVisible4(true)}>
+          <Waypoint
+            onEnter={() => setIsVisible4(true)}
+            onLeave={() => setIsVisible4(false)}
+          >
             <h1
               className="numberHeader w-28 md:w-48 transition-all duration-1000 delay-[1500ms]"
               style={{
@@ -146,7 +158,10 @@ const Plan = () => {
         </div>
 
         <div className="flex items-start">
-          <Waypoint onEnter={() => setIsVisible5(true)}>
+          <Waypoint
+            onEnter={() => setIsVisible5(true)}
+            onLeave={() => setIsVisible5(false)}
+          >
             <h1
               className="numberHeader w-28 md:w-48 transition-all duration-1000 delay-[2000ms]"
               style={{
