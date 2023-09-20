@@ -73,7 +73,7 @@ const Clients = () => {
             </div>
             <div className="w-full flex justify-end">
               <Image
-                src="/img/clients/client2.png"
+                src="/img/clients/client3.png"
                 width={1000}
                 height={1000}
                 alt="client"
@@ -104,7 +104,7 @@ const Clients = () => {
             </div>
             <div className="w-full flex justify-end">
               <Image
-                src="/img/clients/client3.png"
+                src="/img/clients/client2.png"
                 width={1000}
                 height={1000}
                 alt="client"
