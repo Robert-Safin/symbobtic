@@ -13,7 +13,7 @@ const config: Config = {
         inter: "Inter",
       },
       colors: {
-        bgBlack: "rgba(0,0,0,0.95)",
+        bgBlack: "rgba(0,0,0,0.97)",
         highlight: "#0096C3",
         overlay: "rgba(0,150,195,0.05)",
         ghostGray: "#A9A9A9",
