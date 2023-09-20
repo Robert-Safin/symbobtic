@@ -105,6 +105,7 @@ const Hero = () => {
           onLoadedData={() => setIsLoaded(true)}
         />
       </div>
+          <div className="relative  max-w-[1480px]  mx-auto -top-[350px]">
 
       {isLoaded && <p
         className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all delay-0 duration-0 animate-fade-in-fourth
@@ -148,6 +149,7 @@ const Hero = () => {
         We create websites, brand identity and creative content that takes your
         customers by the hand and they bring them to you.
       </p>
+          </div>
     </>
   );
 };

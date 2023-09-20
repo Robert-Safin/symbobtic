@@ -12,9 +12,10 @@ import Footer from "@/components/footer/Footer";
 
 const Home = async () => {
   return (
-    <div>
+    <div className="max-w-[1480px] mx-auto">
       <Nav />
       <Hero />
+
       <About />
       <Services />
       <Plan />

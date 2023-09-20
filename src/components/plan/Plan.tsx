@@ -12,7 +12,7 @@ const Plan = () => {
   return (
     <div className="w-full relative pl-20 my-20 pr-6 mb-52">
       <div className="absolute w-[32px] left-6 top-4 h-[1px] bg-white md:top-6" />
-      <div className="hidden md:block absolute w-[calc(100vw-570px)] right-6 top-4 h-[1px] bg-white md:top-6" />
+      <div className="hidden md:block absolute w-[calc(100%-570px)] right-6 top-4 h-[1px] bg-white md:top-6" />
       <h1 className="secondaryHeader mb-8">we plan for the future.</h1>
       <h1 className="text mb-24 max-w-[200px] md:max-w-[400px]">
         In chaotic moments, language and communication can make all the
@@ -162,7 +162,7 @@ const Plan = () => {
           </h1>
         </div>
       </div>
-      <div className="absolute w-[calc(100vw-48px)]  h-[1px] bg-white right-6 -bottom-20" />
+      <div className="absolute w-[calc(100%-48px)]  h-[1px] bg-white right-6 -bottom-20" />
     </div>
   );
 };
