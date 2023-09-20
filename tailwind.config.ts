@@ -34,7 +34,7 @@ const config: Config = {
         "fade-in-first": "fade-in 1.5s linear",
         "fade-in-second": "fade-in 2.5s linear ",
         "fade-in-third": "fade-in 3.5s linear ",
-        "fade-in-fourth": "fade-in 4s linear ",
+        "fade-in-fourth": "fade-in 2.5s linear ",
       },
     },
   },
