@@ -7,9 +7,9 @@ const Blog = () => {
 
       <h1 className="secondaryHeader py-20">blog</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        <div className="flex flex-col group px-12 md:px-0">
+        <div className="flex flex-col group px-12 md:px-0 group">
           <div className="relative">
-            <div className="absolute w-full h-full bg-highlight -z-10"/>
+            <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
               src="/img/blog/blog1.png"
               width={1000}
@@ -41,9 +41,9 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col group px-12 md:px-0">
+        <div className="flex flex-col group px-12 md:px-0 group">
           <div className="relative">
-            <div className="absolute w-full h-full bg-highlight -z-10"/>
+            <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
               src="/img/blog/blog2.png"
               width={1000}
@@ -75,9 +75,9 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col group px-12 md:px-0">
+        <div className="flex flex-col group px-12 md:px-0 group">
           <div className="relative">
-            <div className="absolute w-full h-full bg-highlight -z-10"/>
+            <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
               src="/img/blog/blog3.png"
               width={1000}
@@ -109,9 +109,9 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col group px-12 md:px-0">
+        <div className="flex flex-col group px-12 md:px-0 group">
           <div className="relative">
-            <div className="absolute w-full h-full bg-highlight -z-10"/>
+            <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
               src="/img/blog/blog4.png"
               width={1000}

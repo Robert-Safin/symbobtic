@@ -81,7 +81,7 @@ const Quote = () => {
         </span>
       </h1>
 
-      <p className="text bottom-6 left-6 absolute z-10">Arthur C. Clarke</p>
+      <p className="text bottom-24 left-12 absolute z-10">Arthur C. Clarke</p>
     </div>
   );
 };
