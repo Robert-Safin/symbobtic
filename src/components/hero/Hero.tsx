@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -108,15 +107,14 @@ const Hero = () => {
           <div className="relative  max-w-[1480px]  mx-auto -top-[350px]">
 
       {isLoaded && <p
-        className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all delay-0 duration-0 animate-fade-in-fourth
+        className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all   animate-pulse  animate-duration-[4000ms]
 
         "
         style={{
           transform: `translateY(${offsetY * -2.1}px)`,
-          filter:
-            offsetY > 1
-              ? `blur(${Math.min(Math.max((offsetY - 1) / 20, 0), 50)}px)`
-              : "blur(0px)",
+          opacity: `0`,
+          display: `${offsetY < 40 ? "block" : "none"}`,
+
         }}
       >
         scroll and find out more
@@ -127,10 +125,7 @@ const Hero = () => {
         style={{
           transform: `translateY(${offsetY * -2.1}px)`,
           opacity: `${offsetY / 200}`,
-          filter:
-            offsetY > 180
-              ? `blur(${Math.min(Math.max((offsetY - 180) / 20, 0), 50)}px)`
-              : "blur(0px)",
+
         }}
       >
         We use design to put people and their choices at the center.
@@ -140,10 +135,7 @@ const Hero = () => {
         style={{
           transform: `translateY(${offsetY * -2.1}px)`,
           opacity: `${Math.min(Math.max((offsetY - 208) / 200, 0), 1)}`,
-          filter:
-            offsetY > 400
-              ? `blur(${Math.min(Math.max((offsetY - 400) / 20, 0), 50)}px)`
-              : "blur(0px)",
+
         }}
       >
         We create websites, brand identity and creative content that takes your
