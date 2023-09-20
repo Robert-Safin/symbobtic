@@ -1,13 +1,28 @@
+"use client";
+import { useState } from "react";
+import { Waypoint } from "react-waypoint";
+
 const About = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <div className="relative mb-48">
       <div className="absolute h-[1px] w-[calc(70px)] bg-white left-6 top-4 md:top-6" />
       <div className="hidden md:block absolute h-[1px] w-[calc(100%-620px-110px)] bg-white right-6 top-4 md:top-6" />
 
       <div className="flex flex-col ml-20 my-20 md:my-40 px-10 max-w-[700px]">
-        <h1 className="secondaryHeader mb-8">
-          the big things, like the small ones, <br /> everything fascinates us.
-        </h1>
+        <Waypoint onEnter={() => setIsVisible(true)}>
+          <h1
+            className={`secondaryHeader mb-8 transition-all delay-100 duration-1000 ${
+              isVisible
+                ? "animate-fade-up animate-duration-1000 animate-delay-100"
+                : ""
+            }`}
+          >
+            the big things, like the small ones, <br /> everything fascinates
+            us.
+          </h1>
+        </Waypoint>
 
         <p className="text mb-4 max-w-[500px]">
           every day we have the ambition to {""}

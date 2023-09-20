@@ -81,7 +81,7 @@ const Services = () => {
 
           <div>
             <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
-              Copywriting
+              copywriting
             </h1>
             <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
               SEO optimization

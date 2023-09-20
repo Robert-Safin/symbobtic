@@ -9,11 +9,24 @@ const Plan = () => {
   const [isVisible4, setIsVisible4] = useState(false);
   const [isVisible5, setIsVisible5] = useState(false);
 
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <div className="w-full relative pl-20 my-20 pr-6 mb-52">
       <div className="absolute w-[32px] left-6 top-4 h-[1px] bg-white md:top-6" />
       <div className="hidden md:block absolute w-[calc(100%-570px)] right-6 top-4 h-[1px] bg-white md:top-6" />
-      <h1 className="secondaryHeader mb-8">we plan for the future.</h1>
+      <Waypoint onEnter={() => setIsVisible(true)}>
+        <h1
+          className={`secondaryHeader mb-8 delay-100 ${
+            isVisible
+              ? "animate-fade-up animate-duration-1000 animate-delay-100"
+              : ""
+          }`}
+        >
+          we plan for the future.
+        </h1>
+      </Waypoint>
+
       <h1 className="text mb-24 max-w-[200px] md:max-w-[400px]">
         In chaotic moments, language and communication can make all the
         difference. There are our {""}

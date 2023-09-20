@@ -42,41 +42,41 @@ const Quote = () => {
         </div>
       </Waypoint>
 
-      <h1 className="quoteHeader top-24 absolute right-6 z-40 text-right max-w-[330px] md:max-w-[900px] lg:left-20">
+      <h1 className=" quoteHeader top-24 absolute right-6 z-40 text-right max-w-[430px] md:max-w-[1200px] lg:left-20">
         Man cannot discover new oceans unless he has the courage to {""}
         <span className="relative">
           lose {""}
           <div
             className="absolute w-full h-3 -z-10 bg-highlight bottom-1 right-0
-            md:h-2 md:bottom-2"
+            md:h-8 md:bottom-2"
           />
         </span>
         <span className="relative">
           sight {""}
           <div
             className="absolute w-full h-3 -z-10 bg-highlight bottom-1 left-0
-            md:h-2 md:bottom-2"
+            md:h-8 md:bottom-2"
           />
         </span>
         <span className="relative">
           of {""}
           <div
             className="absolute w-full h-3 -z-10 bg-highlight bottom-1 left-0
-            md:h-2 md:bottom-2"
+            md:h-8 md:bottom-2"
           />
         </span>
         <span className="relative">
           the {""}
           <div
             className="absolute w-full h-3 -z-10 bg-highlight bottom-1 left-0
-            md:h-2 md:bottom-2"
+            md:h-8 md:bottom-2"
           />
         </span>
         <span className="relative">
           shore.
           <div
             className="absolute w-full h-3 -z-10 bg-highlight bottom-1 left-0
-            md:h-2 md:bottom-2"
+            md:h-8 md:bottom-2"
           />
         </span>
       </h1>

@@ -35,7 +35,7 @@ const Blog = () => {
               originali e creative ci aiutano a trovare queste cose. Come
               imparare queste preziose qualità
             </p>
-            <div className="relative w-10 h-10 right-6 lg:right-8">
+            <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
                 className="absolute w-10 h-2 bg-white top-4 rotate-0
           translate-all duration-500 group-hover:rotate-45 group-hover:bg-highlight
@@ -69,7 +69,7 @@ const Blog = () => {
               originali e creative ci aiutano a trovare queste cose. Come
               imparare queste preziose qualità
             </p>
-            <div className="relative w-10 h-10 right-6 lg:right-8">
+            <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
                 className="absolute w-10 h-2 bg-white top-4 rotate-0
           translate-all duration-500 group-hover:rotate-45 group-hover:bg-highlight
@@ -103,7 +103,7 @@ const Blog = () => {
               originali e creative ci aiutano a trovare queste cose. Come
               imparare queste preziose qualità
             </p>
-            <div className="relative w-10 h-10 right-6 lg:right-8">
+            <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
                 className="absolute w-10 h-2 bg-white top-4 rotate-0
           translate-all duration-500 group-hover:rotate-45 group-hover:bg-highlight
@@ -137,7 +137,7 @@ const Blog = () => {
               originali e creative ci aiutano a trovare queste cose. Come
               imparare queste preziose qualità
             </p>
-            <div className="relative w-10 h-10 right-6 lg:right-8">
+            <div className="relative w-10 h-10 right-6 lg:right-8 pl-4">
               <div
                 className="absolute w-10 h-2 bg-white top-4 rotate-0
           translate-all duration-500 group-hover:rotate-45 group-hover:bg-highlight

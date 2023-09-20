@@ -22,7 +22,7 @@ const Hero = () => {
     overflow-hidden
     "
       >
-        {isLoaded && (
+        {isLoaded && window.scrollY < 1200 && (
           <div
             className=" w-full px-4 sm:px-12
       mt-[110px] md:mt-[200px]"
@@ -66,12 +66,18 @@ const Hero = () => {
                     : {}
                 }
               >
-                <Waypoint onEnter={()=>setIsVisible(true)}>
-
-                <h2 className="relative heroHeader">
-                  human
-                  <div className={`absolute w-1 h-6 bg-highlight bottom-1 md:bottom-2 md:h-10 -z-10  translate-all duration-700 delay-[2000ms]  ${isVisible? "w-[100%]" : ""}`} />
-                </h2>
+                <Waypoint
+                  onEnter={() => setIsVisible(true)}
+                  onLeave={() => setIsVisible(false)}
+                >
+                  <h2 className="relative heroHeader">
+                    human
+                    <div
+                      className={`absolute w-1 h-6 bg-highlight bottom-1 md:bottom-2 md:h-10 -z-10  translate-all duration-700 delay-[2000ms]  ${
+                        isVisible ? "w-[100%]" : "w-1"
+                      }`}
+                    />
+                  </h2>
                 </Waypoint>
               </div>
               <h2
@@ -108,44 +114,42 @@ const Hero = () => {
           onLoadedData={() => setIsLoaded(true)}
         />
       </div>
-          <div className="relative  max-w-[1480px]  mx-auto -top-[350px]">
-
-      {isLoaded && <p
-        className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all   animate-pulse  animate-duration-[4000ms]
+      <div className="relative  max-w-[1480px]  mx-auto -top-[350px]">
+        {isLoaded && (
+          <p
+            className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all   animate-pulse  animate-duration-[4000ms]
 
         "
-        style={{
-          transform: `translateY(${offsetY * -2.1}px)`,
-          opacity: `0`,
-          display: `${offsetY < 40 ? "block" : "none"}`,
+            style={{
+              transform: `translateY(${offsetY * -2.1}px)`,
+              opacity: `0`,
+              display: `${offsetY < 40 ? "block" : "none"}`,
+            }}
+          >
+            scroll and find out more
+          </p>
+        )}
 
-        }}
-      >
-        scroll and find out more
-      </p>}
-
-      <p
-        className="hidden lg:block right-40 absolute -bottom-20 text max-w-[250px]"
-        style={{
-          transform: `translateY(${offsetY * -2.1}px)`,
-          opacity: `${offsetY / 200}`,
-
-        }}
-      >
-        We use design to put people and their choices at the center.
-      </p>
-      <p
-        className="hidden lg:block right-40  -bottom-[800px] absolute text max-w-[250px]"
-        style={{
-          transform: `translateY(${offsetY * -2.1}px)`,
-          opacity: `${Math.min(Math.max((offsetY - 208) / 200, 0), 1)}`,
-
-        }}
-      >
-        We create websites, brand identity and creative content that takes your
-        customers by the hand and they bring them to you.
-      </p>
-          </div>
+        <p
+          className="hidden lg:block right-40 absolute -bottom-20 text max-w-[250px]"
+          style={{
+            transform: `translateY(${offsetY * -2.1}px)`,
+            opacity: `${offsetY / 200}`,
+          }}
+        >
+          We use design to put people and their choices at the center.
+        </p>
+        <p
+          className="hidden lg:block right-40  -bottom-[800px] absolute text max-w-[250px]"
+          style={{
+            transform: `translateY(${offsetY * -2.1}px)`,
+            opacity: `${Math.min(Math.max((offsetY - 208) / 200, 0), 1)}`,
+          }}
+        >
+          We create websites, brand identity and creative content that takes
+          your customers by the hand and they bring them to you.
+        </p>
+      </div>
     </>
   );
 };
