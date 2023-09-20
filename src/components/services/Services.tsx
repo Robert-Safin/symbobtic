@@ -32,7 +32,7 @@ const Services = () => {
         </Waypoint>
         <div className="flex flex-col lg:flex-row justify-between w-full pr-6">
           <div>
-            <h1 className="serviceHeader mb-3 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
+            <h1 className="serviceHeader mb-3 underline  decoration-4">
               brand design
             </h1>
             <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
@@ -56,7 +56,7 @@ const Services = () => {
           </div>
 
           <div>
-            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
+            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline  decoration-4">
               web design
             </h1>
             <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
@@ -80,7 +80,7 @@ const Services = () => {
           </div>
 
           <div>
-            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline hover:text-highlight transition-all duration-500 hover:decoration-highlight decoration-4">
+            <h1 className="serviceHeader mb-3 mt-8 lg:mt-0 underline  decoration-4">
               copywriting
             </h1>
             <p className="text mb-[6px] hover:text-highlight transition-all duration-500">
