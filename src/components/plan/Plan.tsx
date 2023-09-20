@@ -141,7 +141,7 @@ const Plan = () => {
               />
             </span>
             <span className="relative text">
-              and
+              and {""}
               <div
                 className="absolute w-full h-1 bottom-1 -z-10 right-0 bg-highlight
           md:h-3"

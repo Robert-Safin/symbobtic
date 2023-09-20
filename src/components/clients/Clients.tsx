@@ -25,7 +25,7 @@ const Clients = () => {
             <div className="flex flex-row justify-between items-center">
               <p className="text w-80">UrbanEcho Blueprint</p>
               <div className="hidden md:flex w-full ml-20">
-                <p className="text group-hover:text-highlight">copyrighting</p>
+                <p className="text group-hover:text-highlight">copywriting</p>
               </div>
               <div className="relative w-10 h-10 md:right-4">
                 <div

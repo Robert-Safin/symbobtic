@@ -64,7 +64,7 @@ const Nav = () => {
               <p className="text-ghostGray">our services</p>
               <h2 className="menuLinks">brand design</h2>
               <h2 className="menuLinks">web services</h2>
-              <h2 className="menuLinks">copyrighting</h2>
+              <h2 className="menuLinks">copywriting</h2>
             </div>
           </div>
         </div>
