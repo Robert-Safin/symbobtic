@@ -10,8 +10,11 @@ const Nav = () => {
     border-b border-white px-5
     flex justify-between items-center fixed top-0 z-50 bg-white bg-opacity-5
     backdrop-blur-[6px]
+    md:w-[100%]
+    md:max-w-[1480px]
     md:border md:h-[120px]
-    md:mt-10 md:scale-95
+    md:mt-10
+    md:scale-95
 
     "
     >

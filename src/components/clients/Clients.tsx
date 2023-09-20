@@ -128,7 +128,7 @@ const Clients = () => {
         </div>
       </div>
       <div className="w-full justify-center flex md:justify-start">
-        <button className=" text-white text-2xl hover:bg-highlight border hover:border-none py-7 px-10 w-[270px] md:w-[450px] rounded-full my-20">
+        <button className=" text-white text-2xl hover:bg-highlight border hover:border-highlight py-7 px-10 w-[270px] md:w-[450px] rounded-full my-20">
           +
         </button>
       </div>
