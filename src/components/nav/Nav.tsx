@@ -22,19 +22,19 @@ const Nav = () => {
         <h1 className="bannerLogo">Symbobtic</h1>
 
         <div className="hidden md:flex space-x-6">
-          <h1 className="navLinks">brand design</h1>
-          <h1 className="navLinks">web design</h1>
-          <h1 className="navLinks">copyrighting</h1>
+          <h1 className="navLinks transition-all duration-500 delay-100">brand design</h1>
+          <h1 className="navLinks transition-all duration-500 delay-100">web design</h1>
+          <h1 className="navLinks transition-all duration-500 delay-100">copyrighting</h1>
         </div>
       </div>
 
       {!menuOpen && (
-        <p className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
+        <p className="menuBurger transition-all duration-500 delay-100" onClick={() => setMenuOpen(!menuOpen)}>
           menu
         </p>
       )}
       {menuOpen && (
-        <p className="menuBurger" onClick={() => setMenuOpen(!menuOpen)}>
+        <p className="menuBurger transition-all duration-500 delay-100" onClick={() => setMenuOpen(!menuOpen)}>
           close
         </p>
       )}
