@@ -42,6 +42,7 @@ const Clients = () => {
             </div>
             <div className="w-full flex justify-end">
               <Image
+                priority={true}
                 src="/img/clients/client1.png"
                 width={1000}
                 height={1000}
@@ -73,6 +74,7 @@ const Clients = () => {
             </div>
             <div className="w-full flex justify-end">
               <Image
+                priority={true}
                 src="/img/clients/client3.png"
                 width={1000}
                 height={1000}
@@ -104,6 +106,7 @@ const Clients = () => {
             </div>
             <div className="w-full flex justify-end">
               <Image
+                priority={true}
                 src="/img/clients/client2.png"
                 width={1000}
                 height={1000}
@@ -135,6 +138,7 @@ const Clients = () => {
             </div>
             <div className="w-full flex justify-end">
               <Image
+                priority={true}
                 src="/img/clients/client4.png"
                 width={1000}
                 height={1000}

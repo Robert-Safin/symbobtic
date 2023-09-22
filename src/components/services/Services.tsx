@@ -112,13 +112,13 @@ const Services = () => {
         <Waypoint
           onEnter={(e) => {
             setIsVisible(true);
-            console.log(e.viewportBottom);
 
             setEnteredY(e.viewportBottom);
           }}
         >
           <div className="relative h-[420px] w-full  md:h-[700px] md:mr-0 lg:w-[790px]  overflow-hidden">
             <Image
+              priority={true}
               src="/img/satellite.png"
               width={1000}
               height={1000}
@@ -144,7 +144,7 @@ const Services = () => {
             className={`quoteHeader px-4 absolute top-14 left-6 md:top-20
             transition-all duration-[1500ms] delay-300
         lg:max-w-[800px] ${quoteVisible ? "blur-none" : "blur-lg"}
-        ${quoteVisible? "opacity-100" : "opacity-0"}
+        ${quoteVisible ? "opacity-100" : "opacity-0"}
 
         `}
           >

@@ -1,7 +1,12 @@
 "use client";
 import { Waypoint } from "react-waypoint";
-import { useEffect, useState } from "react";
-const Hero = () => {
+import { FC, useEffect, useState } from "react";
+
+interface Props {
+  onVideoLoad: () => void;
+}
+
+const Hero: FC<Props> = (props) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
   const [offsetY, setOffsetY] = useState(0);
@@ -17,10 +22,34 @@ const Hero = () => {
 
   return (
     <>
+      {isLoaded === false && (
+        <div className="relative flex mt-[50%] scale-50 md:-top-20
+        lg:-top-56
+        xl:-top-96
+        ">
+          <div className="circles">
+            <div className="circle1"></div>
+            <div className="circle2"></div>
+            <div className="circle3"></div>
+            <div className="circle4"></div>
+            <div className="circle5"></div>
+            <div className="circle6"></div>
+            <div className="circle7"></div>
+            <div className="circle8"></div>
+            <div className="circle9"></div>
+            <div className="circle10"></div>
+            <div className="circle11"></div>
+            <div className="circle12"></div>
+            <div className="circle13"></div>
+            <div className="circle14"></div>
+            <div className="circle15"></div>
+          </div>
+        </div>
+      )}
       <div
-        className="relative max-w-[1480px] h-[680px] md:h-[1300px] mx-auto
+        className={`relative max-w-[1480px] h-[680px] md:h-[1300px] mx-auto
     overflow-hidden
-    "
+     ${isLoaded ? "opacity-100" : "opacity-0"}`}
       >
         {isLoaded && window.scrollY < 1200 && (
           <div
@@ -111,7 +140,10 @@ const Hero = () => {
           autoPlay
           loop
           src="/video/symbobtic.mp4"
-          onLoadedData={() => setIsLoaded(true)}
+          onLoadedData={() => {
+            props.onVideoLoad();
+            setIsLoaded(true);
+          }}
         />
       </div>
       <div className="relative  max-w-[1480px]  mx-auto -top-[350px]">
@@ -150,6 +182,7 @@ const Hero = () => {
           your customers by the hand and they bring them to you.
         </p>
       </div>
+      <div></div>
     </>
   );
 };

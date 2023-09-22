@@ -22,13 +22,13 @@ const Quote = () => {
       <Waypoint
         onEnter={(e) => {
           setIsVisible(true);
-          console.log(e.viewportBottom);
 
           setEnteredY(e.viewportBottom);
         }}
       >
         <div className="relative lg:flex lg:justify-start w-full h-[420px] md:h-[590px] lg:w-[720px] overflow-hidden">
           <Image
+            priority={true}
             src="/quote.png"
             width={1000}
             height={1000}

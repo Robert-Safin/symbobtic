@@ -24,6 +24,7 @@ const Blog = () => {
           <div className="relative">
             <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
+              priority={true}
               src="/img/blog/blog1.png"
               width={1000}
               height={1000}
@@ -59,6 +60,7 @@ const Blog = () => {
           <div className="relative">
             <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
+             priority={true}
               src="/img/blog/blog2.png"
               width={1000}
               height={1000}
@@ -94,6 +96,7 @@ const Blog = () => {
           <div className="relative">
             <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
+             priority={true}
               src="/img/blog/blog3.png"
               width={1000}
               height={1000}
@@ -130,6 +133,7 @@ const Blog = () => {
           <div className="relative">
             <div className="absolute w-full h-full  -z-10 group-hover:bg-highlight" />
             <Image
+             priority={true}
               src="/img/blog/blog4.png"
               width={1000}
               height={1000}
@@ -160,9 +164,11 @@ const Blog = () => {
         </div>
       </div>
       <div className="w-full justify-center flex md:justify-start">
-        <button className=" text-white text-2xl hover:bg-highlight border hover:border-highlight py-7 px-10 w-[270px] md:w-[450px] rounded-full my-20
+        <button
+          className=" text-white text-2xl hover:bg-highlight border hover:border-highlight py-7 px-10 w-[270px] md:w-[450px] rounded-full my-20
         transition-all duration-500 delay-0
-        ">
+        "
+        >
           +
         </button>
       </div>
