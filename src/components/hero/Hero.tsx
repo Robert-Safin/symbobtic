@@ -23,10 +23,12 @@ const Hero: FC<Props> = (props) => {
   return (
     <>
       {isLoaded === false && (
-        <div className="relative flex mt-[50%] scale-50 md:-top-20
+        <div
+          className="relative flex mt-[50%] scale-50 md:-top-20
         lg:-top-56
         xl:-top-96
-        ">
+        "
+        >
           <div className="circles">
             <div className="circle1"></div>
             <div className="circle2"></div>
@@ -147,10 +149,9 @@ const Hero: FC<Props> = (props) => {
         />
       </div>
       <div className="relative  max-w-[1480px]  mx-auto -top-[350px]">
-        {isLoaded && (
+        {isLoaded  && (
           <p
             className="hidden lg:block right-44 absolute bottom-40 text max-w-[250px] transition-all   animate-pulse  animate-duration-[4000ms]
-
         "
             style={{
               transform: `translateY(${offsetY * -2.1}px)`,
