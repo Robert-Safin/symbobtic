@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <div className="max-w-[1480px] mx-auto">
-      <Nav />
+      {isLoaded && <Nav />}
       <Hero onVideoLoad={() => setIsLoaded(true)} />
       {isLoaded && (
         <>
